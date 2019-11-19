@@ -36,6 +36,9 @@ class AudioPlayer(object):
         self.position = float(self._process.match.group(1))
         sleep(0.05)
 
+  def wait(self):
+    while True:
+      pass
 
   def unload(self):
     if(self.path):
@@ -54,4 +57,4 @@ if __name__=="__main__":
   player = AudioPlayer()
   player.load(fileToPlay)
   #player.play()
-  player.stop()
+  player.wait()
