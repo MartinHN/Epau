@@ -48,7 +48,8 @@ def startLoop():
     
     slTime = nextATime - cTime
     print('sleeping for',slTime)
-    sleep(slTime)
+    if(slTime>0):
+      sleep(slTime)
   l.goToSeq("base",3)
   isLooping=False
 
