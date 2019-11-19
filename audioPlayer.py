@@ -13,7 +13,7 @@ class AudioPlayer(object):
   path=""
 
 
-  def load(self,path,cb):
+  def load(self,path):
     self.unload()
     args =""
     cmd=self._LAUNCH_CMD%(path,args)
@@ -21,24 +21,24 @@ class AudioPlayer(object):
     self.path = path
     self._position_thread = Thread(target=self._get_position)
 
-    def _get_position(self):
-      while True:
-        index = self._process.expect([self._STATUS_REXP,
-          pexpect.TIMEOUT,pexpect.EOF,
-          self._DONE_REXP])
-        if index== 1:
-          continue
-        elif index in (2,3):
-          break
-        else:
-          self.position = float(self._process.match.group(1))
-          sleep(0.05)
+  def _get_position(self):
+    while True:
+      index = self._process.expect([self._STATUS_REXP,
+        pexpect.TIMEOUT,pexpect.EOF,
+        self._DONE_REXP])
+      if index== 1:
+        continue
+      elif index in (2,3):
+        break
+      else:
+        self.position = float(self._process.match.group(1))
+        sleep(0.05)
 
 
-    def unload(self):
-      if(self.path):
-        self._process.send(self._QUIT_CMD)
-        self._process.terminate(force=True)
+  def unload(self):
+    if(self.path):
+      self._process.send(self._QUIT_CMD)
+      self._process.terminate(force=True)
 
 
 
