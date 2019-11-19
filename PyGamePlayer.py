@@ -28,7 +28,7 @@ if __name__=="__main__":
   import optparse
   parser = optparse.OptionParser()
   (opts,args) = parser.parse_args()
-  fileToPlay = args or "/Users/Tintamar/Documents/FeuCoeur Project/radioZap2.wav"
+  fileToPlay = args[0]
   print(opts,args)
   player = PyGamePlayer()
   player.load(fileToPlay)
