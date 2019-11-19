@@ -43,13 +43,13 @@ class AudioPlayer(object):
 
 
 
-              if __name__=="__main__":
-                import optparse
-                parser = optparse.OptionParser()
-                (opts,args) = parser.parse_args()
-                fileToPlay = args or " /Users/Tintamar/Work/moro/Mahala Raï Banda vs Shantel  Mahalageasca - Bucovina Dub-c_V8IhONTkQ.mp3"
-                print(opts,args)
-                player = new AudioPlayer()
-                player.load(fileToPlay)
-                player.play()
-                player.stop()
+if __name__=="__main__":
+  import optparse
+  parser = optparse.OptionParser()
+  (opts,args) = parser.parse_args()
+  fileToPlay = args or " /Users/Tintamar/Work/moro/Mahala Raï Banda vs Shantel  Mahalageasca - Bucovina Dub-c_V8IhONTkQ.mp3"
+  print(opts,args)
+  player = AudioPlayer()
+  player.load(fileToPlay)
+  player.play()
+  player.stop()
