@@ -8,6 +8,7 @@ class PyGamePlayer(object):
 
   def load(self,path):
     self.path = path
+    print("loading",path)
     self.sound= pygame.mixer.music.load(path)
     
     
@@ -17,7 +18,7 @@ class PyGamePlayer(object):
   def wait(self):
     while pygame.mixer.music.get_busy() == True:
       continue
-      
+
   def stop(self):
     self.sound.stop()
 
