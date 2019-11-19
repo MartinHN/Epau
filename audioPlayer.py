@@ -10,7 +10,7 @@ class AudioPlayer(object):
   _PAUSE_CMD='p'
   _QUIT_CMD='q'
   paused = False
-  self.path=""
+  path=""
 
 
   def load(self,path,cb):
