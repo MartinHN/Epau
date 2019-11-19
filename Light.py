@@ -4,8 +4,9 @@ import time
 
 
 class Light:
-  def __init__(self):
-    self.client = udp_client.SimpleUDPClient("localhost", 11000)
+  def __init__(self,host=None):
+    host = host or "localhost"
+    self.client = udp_client.SimpleUDPClient(host, 11000)
     
 
   def goToSeq(self,seqName,time=0):

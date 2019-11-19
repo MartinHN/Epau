@@ -1,2 +1,5 @@
 python-osc
+pigpio
 pexpect
+
+sudo pigpio

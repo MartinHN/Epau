@@ -11,7 +11,6 @@ class PyGamePlayer(object):
     print("loading",path)
     self.sound= pygame.mixer.music.load(path)
     
-    
   def play(self):
     pygame.mixer.music.play()
 
