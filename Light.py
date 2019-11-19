@@ -5,7 +5,7 @@ import time
 
 class Light:
   def __init__(self,host=None):
-    host = host or "localhost"
+    host = host or "127.0.0.1"
     self.client = udp_client.SimpleUDPClient(host, 11000)
     
 

@@ -52,7 +52,7 @@ def startLoop():
 
 
 
-l = Light("localhost")
+l = Light()
 def doActionAtIdx(i):
   print("action", i)
   l.goToSeq(str(i),1)
