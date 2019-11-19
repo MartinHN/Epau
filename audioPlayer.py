@@ -53,5 +53,5 @@ if __name__=="__main__":
   print(opts,args)
   player = AudioPlayer()
   player.load(fileToPlay)
-  player.play()
+  #player.play()
   player.stop()
