@@ -61,6 +61,7 @@ def doActionAtIdx(i):
 
 
 if __name__=="__main__":
+  l.goToSeq("base",1)
   d = Detector(newDetection)
   
   while True:
