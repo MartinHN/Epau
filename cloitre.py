@@ -27,6 +27,7 @@ def newDetection(gpio,level,tick):
 
 def startLoop():
   global isLooping
+  l.goToSeq("base",1)
   isLooping=True
   startTime = time()
   player.play()
@@ -48,6 +49,7 @@ def startLoop():
     slTime = nextATime - cTime
     print('sleeping for',slTime)
     sleep(slTime)
+  l.goToSeq("base",1)
   isLooping=False
 
 

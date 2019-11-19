@@ -1,5 +1,5 @@
-sudo apt-get install python-pip
-sudo apt-get install python-pygame
+sudo apt-get install python3-pip
+sudo apt-get install python3-pygame
 sudo apt install libsdl1.2-dev
 
 alsamixer!!
