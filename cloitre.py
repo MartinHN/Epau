@@ -27,6 +27,9 @@ def newDetection(gpio,level,tick):
 
 def startLoop():
   global isLooping
+  global needStartLoop
+  needStartLoop=False
+
   l.goToSeq("base",1)
   isLooping=True
   startTime = time()
