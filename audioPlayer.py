@@ -9,7 +9,7 @@ class AudioPlayer(object):
   _STATUS_REXP=re.compile(r"V :\s*([\d.]+).*")
   _PAUSE_CMD='p'
   _QUIT_CMD='q'
-  paused = false
+  paused = False
   self.path=""
 
 
