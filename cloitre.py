@@ -49,7 +49,7 @@ def startLoop():
     slTime = nextATime - cTime
     print('sleeping for',slTime)
     sleep(slTime)
-  l.goToSeq("base",1)
+  l.goToSeq("base",3)
   isLooping=False
 
 
@@ -57,11 +57,11 @@ def startLoop():
 l = Light()
 def doActionAtIdx(i):
   print("action", i)
-  l.goToSeq(str(i),1)
+  l.goToSeq(str(i),.3)
 
 
 if __name__=="__main__":
-  l.goToSeq("base",1)
+  l.goToSeq("base",5)
   d = Detector(newDetection)
   
   while True:
