@@ -6,7 +6,7 @@ from Detector import Detector
 from time import time,sleep
 from PyGamePlayer import PyGamePlayer
 
-loopTime = 3*60
+loopTime = 30
 isLooping = False
 needStartLoop = False
 player = PyGamePlayer()
