@@ -10,7 +10,7 @@ def getHostName():
   hn = socket.gethostname()
   if hn.endswith(".local"):
     hn=hn[:-6]
-  return hn
+  return hn.lower()
 
 def getLocalConfig(h=None):
   global baseMediaPath

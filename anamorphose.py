@@ -1,10 +1,10 @@
 import os
 
-from Light import Light
+from Utils.Light import Light
 from config import *
-from Detector import Detector
+from Utils.Detector import Detector
 from time import time,sleep
-from PyGamePlayer import PyGamePlayer
+from Utils.PyGamePlayer import PyGamePlayer
 
 
 isLooping = False
@@ -71,7 +71,7 @@ def doActionAtIdx(i):
   l.goToSeq(str(i),fadeIn)
 
 
-def doMainLoop()
+def doMainLoop():
   l.goToSeq("base",5)
   if(getHostName()=="tintamar"):
     startLoop()

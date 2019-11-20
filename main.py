@@ -5,6 +5,6 @@ from config import getHostName
 
 if __name__=="__main__":
   hn = getHostName()
-  if hn=="anamorphose":
-    from cloitre import doMainLoop
+  if hn=="anamorphose" or hn=="tintamar":
+    from anamorphose import doMainLoop
     doMainLoop()
