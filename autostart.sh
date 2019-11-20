@@ -1,7 +1,8 @@
 #!/bin/bash
-exec &> "${HOME}/epaulog.txt"
+HOMEDIR=/home/pi
+exec &> "${HOMEDIR}/epaulog.txt"
 
-BASEDIR=$HOME
+BASEDIR=$HOMEDIR
 
 cd $BASEDIR/vermuth/server
 sudo NODE_ENV=production node dist/server/src/server.js --path="${BASEDIR}/Epau/vermuth/" --session=$HOSTNAME &
