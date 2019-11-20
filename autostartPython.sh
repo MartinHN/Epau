@@ -5,7 +5,6 @@ HOMEDIR=/home/pi
 BASEDIR=$HOMEDIR
 
 cd $BASEDIR/Epau
-set -o pipefail
 set -e
 sudo pigpiod
 set +e
