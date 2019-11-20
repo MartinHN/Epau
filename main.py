@@ -6,7 +6,7 @@ from config import getHostName
 if __name__=="__main__":
   hn = getHostName()
   print("starting for ",hn)
-  if hn.startsWith("anamorphose") or hn=="tintamar":
+  if hn.startswith("anamorphose") or hn=="tintamar":
     from anamorphose import doMainLoop
     doMainLoop()
   else:
