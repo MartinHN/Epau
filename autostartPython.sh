@@ -5,7 +5,8 @@ HOMEDIR=/home/pi
 BASEDIR=$HOMEDIR
 
 cd $BASEDIR/Epau
-sudo ./run.sh >> /tmp/python.log 2>&1 
+sudo pigpiod
+python3 main.py >> /tmp/python.log 2>&1 
 
 
 
