@@ -71,7 +71,7 @@ def doActionAtIdx(i):
   l.goToSeq(str(i),fadeIn)
 
 
-if __name__=="__main__":
+def doMainLoop()
   l.goToSeq("base",5)
   if(getHostName()=="tintamar"):
     startLoop()
@@ -81,6 +81,9 @@ if __name__=="__main__":
   while True:
     if(needStartLoop):
       startLoop()
+      
+if __name__=="__main__":
+  doMainLoop()
     
 
   
