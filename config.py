@@ -35,7 +35,7 @@ def getConfigForParsedHn(h,n):
     baseConf["minLoopTime"] = 30
   elif n==2:
     baseConf["times"] = [5.2,   7.2,  9.2,  11.2, 13.2, 15,17,19,21,23,24,25,29]
-    baseConf["fadeIn"] =[  1,     1,    1,     1,    1,  1, 1, 1, 1, 1, 1, 4, 5]
+    baseConf["fadeIn"] =[  1,     1,    1,     1,    1,  1, 1, 1, 1, 1,.2, 4, 5]
     baseConf["minLoopTime"] = 37
   elif n==3:
     baseConf["times"] = [0,1,2,3,4,7]
