@@ -103,7 +103,7 @@
       }
     },
     "groups": {},
-    "_master": 0
+    "_master": 0.057
   },
   "sequenceList": [
     {
@@ -559,31 +559,31 @@
           {
             "name": "A1",
             "pChannelValues": {
-              "channel": 0
+              "channel": 0.057
             }
           },
           {
             "name": "A2",
             "pChannelValues": {
-              "channel": 0
+              "channel": 0.057
             }
           },
           {
             "name": "A3",
             "pChannelValues": {
-              "channel": 0
+              "channel": 0.057
             }
           },
           {
             "name": "A4",
             "pChannelValues": {
-              "channel": 0
+              "channel": 0.057
             }
           },
           {
             "name": "A5",
             "pChannelValues": {
-              "channel": 0
+              "channel": 0.057
             }
           }
         ]
@@ -632,36 +632,36 @@
         {
           "name": "A1",
           "pChannelValues": {
-            "channel": 1
+            "channel": 0.057
           }
         },
         {
           "name": "A2",
           "pChannelValues": {
-            "channel": 1
+            "channel": 0.057
           }
         },
         {
           "name": "A3",
           "pChannelValues": {
-            "channel": 1
+            "channel": 0.057
           }
         },
         {
           "name": "A4",
           "pChannelValues": {
-            "channel": 1
+            "channel": 0.057
           }
         },
         {
           "name": "A5",
           "pChannelValues": {
-            "channel": 1
+            "channel": 0.057
           }
         }
       ]
     },
-    "loadedStateName": "12"
+    "loadedStateName": "13"
   },
   "testValue": 1,
   "dmxController": {

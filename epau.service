@@ -1,0 +1,11 @@
+ [Unit]
+ Description=EpauDeBite
+ After=multi-user.target
+
+ [Service]
+ Type=idle
+ User=pi
+ ExecStart=/bin/sh /home/pi/Epau/autostartPython.sh
+
+ [Install]
+ WantedBy=multi-user.target
