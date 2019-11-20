@@ -5,6 +5,10 @@ from config import getHostName
 
 if __name__=="__main__":
   hn = getHostName()
-  if hn=="anamorphose" or hn=="tintamar":
+  print("starting for ",hn)
+  if hn.startsWith("anamorphose") or hn=="tintamar":
     from anamorphose import doMainLoop
     doMainLoop()
+  else:
+    print("not found hostname")
+    exit(1)
