@@ -59,7 +59,7 @@ def startLoop():
 l = Light()
 def doActionAtIdx(i):
   print("action", i)
-  fadeIn = .3
+  fadeIn = 0
   if "fadeIn" in cfg:
     if i-1>=0 and i-1<len(cfg["fadeIn"]):
       fadeIn = cfg["fadeIn"][i-1]
