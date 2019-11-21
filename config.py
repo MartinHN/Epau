@@ -18,7 +18,7 @@ def getLocalConfig(h=None):
   print("hostname",hn)
   if(hn=="tintamar"):
     baseMediaPath = "/Users/Tintamar/Google_Drive/00_spectacles/MOMOEpau/media/"
-    return getConfigForParsedHn("animo",3)
+    return getConfigForParsedHn("animo",4)
   types = ["anamorphose","animo","zik"]
   for t in types:
     spl = splitStr(hn,t)
@@ -60,11 +60,12 @@ def getConfigForParsedHn(h,n):
       baseConf["fadeIn"] =[0.33,0.27,0.24,0.28] 
       baseConf["minLoopTime"] = 4
     elif n==4:#grenouille
-      baseConf["times"] = [0.06,1.,2.45,3. ]
-      baseConf["fadeIn"] =[0.33,0.27,0.24,0.28] 
-      baseConf["minLoopTime"] = 4
+      baseConf["times"] = [0.01,.75,2. ]
+      #baseConf["fadeIn"] =[0.4,0.4,0.4] 
+      baseConf["minLoopTime"] = 3
     elif n==5:#petitoiseau #random
       baseConf["minLoopTime"] = 4
+      baseConf["times"] = [0.5,.75,.9,1,1.7,2.1,2.45, 2.6,3.2,3.8,4,4.44]
       baseConf["random"] = 6
 
   elif h=="zik":

@@ -38,8 +38,9 @@ def startLoop():
     randomState = cfg["random"]
   if not "times" in cfg:
     interval = .1
-    resolution = cfg["minLoopTime"]/interval
+    resolution = int(cfg["minLoopTime"]/interval)
     timePoints = [x/cfg["minLoopTime"] for x in range(0,resolution)]
+    print(timePoints)
   else:
     timePoints = cfg["times"]
   nextATime = timePoints[nextAIdx]
@@ -49,7 +50,7 @@ def startLoop():
     cTime = time() - startTime
     if(cTime>=nextATime):
       if randomState>0:
-        doActionAtIdx(floor(random.random())*randomState)
+        doActionAtIdx(1+int(random.random()*randomState))
       else:
         doActionAtIdx(nextAIdx+1)
       nextAIdx+=1
