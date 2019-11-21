@@ -43,7 +43,7 @@ def getConfigForParsedHn(h,n):
       baseConf["minLoopTime"] = 16
   
   elif h=="animo":
-    fns = ["Chouette","Coq","Crapaud"]
+    fns = ["Chouette","Coq","Crapaud","Grenouille","PetitOiseau"]
     baseConf = {
     "file":baseMediaPath+"%s.wav"%fns[(n-1)%len(fns)]
     }
@@ -59,9 +59,16 @@ def getConfigForParsedHn(h,n):
       baseConf["times"] = [0.06,1.,2.45,3. ]
       baseConf["fadeIn"] =[0.33,0.27,0.24,0.28] 
       baseConf["minLoopTime"] = 4
+    elif n==4:#grenouille
+      baseConf["times"] = [0.06,1.,2.45,3. ]
+      baseConf["fadeIn"] =[0.33,0.27,0.24,0.28] 
+      baseConf["minLoopTime"] = 4
+    elif n==5:#petitoiseau #random
+      baseConf["minLoopTime"] = 4
+      baseConf["random"] = 6
 
   elif h=="zik":
-    fns = ["zik1","Coq","Crapaud"]
+    fns = ["zik1","zik2","zik3"]
     baseConf = {
     "file":baseMediaPath+"%s.wav"%fns[(n-1)%len(fns)]
     }

@@ -19,7 +19,7 @@
           {
             "name": "channel",
             "circ": 0,
-            "_enabled": false,
+            "_enabled": true,
             "ctype": "base",
             "hasDuplicatedCirc": false,
             "roleType": "dimmer",
@@ -37,7 +37,7 @@
           {
             "name": "channel",
             "circ": 0,
-            "_enabled": false,
+            "_enabled": true,
             "ctype": "base",
             "hasDuplicatedCirc": false,
             "roleType": "dimmer",
@@ -55,7 +55,7 @@
           {
             "name": "channel",
             "circ": 0,
-            "_enabled": false,
+            "_enabled": true,
             "ctype": "base",
             "hasDuplicatedCirc": false,
             "roleType": "dimmer",
@@ -63,11 +63,11 @@
           }
         ],
         "ftype": "direct",
-        "_baseCirc": 3
+        "_baseCirc": 4
       }
     },
     "groups": {},
-    "_master": 0
+    "_master": 1
   },
   "sequenceList": [
     {
@@ -111,7 +111,7 @@
           {
             "name": "A1",
             "pChannelValues": {
-              "channel": 1
+              "channel": 0.423
             }
           },
           {
@@ -120,14 +120,6 @@
           },
           {
             "name": "A3",
-            "pChannelValues": {}
-          },
-          {
-            "name": "A4",
-            "pChannelValues": {}
-          },
-          {
-            "name": "A5",
             "pChannelValues": {}
           }
         ]
@@ -139,13 +131,13 @@
           {
             "name": "A1",
             "pChannelValues": {
-              "channel": 1
+              "channel": 0.495
             }
           },
           {
             "name": "A2",
             "pChannelValues": {
-              "channel": 1
+              "channel": 0.495
             }
           },
           {
@@ -161,19 +153,19 @@
           {
             "name": "A1",
             "pChannelValues": {
-              "channel": 1
+              "channel": 0.472
             }
           },
           {
             "name": "A2",
             "pChannelValues": {
-              "channel": 1
+              "channel": 0.472
             }
           },
           {
             "name": "A3",
             "pChannelValues": {
-              "channel": 1
+              "channel": 0.472
             }
           }
         ]
@@ -184,15 +176,21 @@
         "fixtureStates": [
           {
             "name": "A1",
-            "pChannelValues": {}
+            "pChannelValues": {
+              "channel": 1
+            }
           },
           {
             "name": "A2",
-            "pChannelValues": {}
+            "pChannelValues": {
+              "channel": 1
+            }
           },
           {
             "name": "A3",
-            "pChannelValues": {}
+            "pChannelValues": {
+              "channel": 1
+            }
           }
         ]
       },
@@ -246,13 +244,13 @@
         {
           "name": "A2",
           "pChannelValues": {
-            "channel": 0
+            "channel": 0.999
           }
         },
         {
           "name": "A3",
           "pChannelValues": {
-            "channel": 0
+            "channel": 1
           }
         }
       ]

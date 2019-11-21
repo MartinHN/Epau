@@ -6,7 +6,7 @@ rpi-clone /diskName -s hostname
 #on ubuntu
 sudo dd if=/// of=/raspImg.img status=progress
 sudo pishrink.sh -sz /raspImg.img
-
+#(s = skip expand filesystem on boot)
 
 #TODO hostname change on boot
 #githubUpdate?

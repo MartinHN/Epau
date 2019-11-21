@@ -33,16 +33,28 @@ def startLoop():
   player.play()
   cTime = 0
   nextAIdx = 0
-  nextATime = cfg["times"][nextAIdx]
+  randomState=0
+  if("random" in cfg):
+    randomState = cfg["random"]
+  if not "times" in cfg:
+    interval = .1
+    resolution = cfg["minLoopTime"]/interval
+    timePoints = [x/cfg["minLoopTime"] for x in range(0,resolution)]
+  else:
+    timePoints = cfg["times"]
+  nextATime = timePoints[nextAIdx]
 
   doActionAtIdx(-1)
   while cTime<loopTime:
     cTime = time() - startTime
     if(cTime>=nextATime):
-      doActionAtIdx(nextAIdx+1)
+      if randomState>0:
+        doActionAtIdx(floor(random.random())*randomState)
+      else:
+        doActionAtIdx(nextAIdx+1)
       nextAIdx+=1
-      if nextAIdx<len(cfg["times"]):
-        nextATime = cfg["times"][nextAIdx]
+      if nextAIdx<len(timePoints):
+        nextATime = timePoints[nextAIdx]
       else:
         nextATime = loopTime
     
