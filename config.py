@@ -50,6 +50,7 @@ def getConfigForParsedHn(h,n):
 
     if n==1:#Chouette
       baseConf["times"] = [x/6 for x in range(0,7)]
+      baseConf["globalFade"] = .2
       baseConf["minLoopTime"] = 1
     elif n==2:#coq
       baseConf["times"] = [0.04,.35,.6,.9]

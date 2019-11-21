@@ -76,6 +76,8 @@ def doActionAtIdx(i):
   if "fadeIn" in cfg:
     if i-1>=0 and i-1<len(cfg["fadeIn"]):
       fadeIn = cfg["fadeIn"][i-1]
+  elif "globalFade" in cfg:
+    fadeIn = cfg["globalFade"]
   l.goToSeq(str(i),fadeIn)
 
 
