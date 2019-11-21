@@ -52,7 +52,8 @@ def getConfigForParsedHn(h,n):
       baseConf["times"] = [x/6 for x in range(0,7)]
       baseConf["minLoopTime"] = 1
     elif n==2:#coq
-      baseConf["times"] = [0.04,.35,.6]
+      baseConf["times"] = [0.04,.35,.6,.9]
+      baseConf["fadeIn"] =[0   ,  0, 0, 1] 
       baseConf["minLoopTime"] = 1
     elif n==3:#crapaud
       baseConf["times"] = [0.14,1.14,2.50,3.1 ]
