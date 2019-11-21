@@ -14,4 +14,4 @@ sudo pishrink.sh -sz /raspImg.img
 
 #media sync
 
-rsync -a --delete /Users/Tintamar/Google_Drive/00_spectacles/MOMOEpau/media/ pi@ll.local:~/media
+rsync -av --delete /Users/Tintamar/Google_Drive/00_spectacles/MOMOEpau/media/ pi@ll.local:~/media
