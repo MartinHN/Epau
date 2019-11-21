@@ -19,7 +19,7 @@ def getLocalConfig(h=None):
   if(hn=="tintamar"):
     baseMediaPath = "/Users/Tintamar/Google_Drive/00_spectacles/MOMOEpau/media/"
     return getConfigForParsedHn("animo",3)
-  types = ["anamorphose"]
+  types = ["anamorphose","animo","zik"]
   for t in types:
     spl = splitStr(hn,t)
     if spl:
@@ -41,6 +41,7 @@ def getConfigForParsedHn(h,n):
       baseConf["times"] = [0,1,2,3,4,7]
       baseConf["fadeIn"] =[0,0,0,0,0,6] 
       baseConf["minLoopTime"] = 16
+  
   elif h=="animo":
     fns = ["Chouette","Coq","Crapaud"]
     baseConf = {
@@ -57,6 +58,12 @@ def getConfigForParsedHn(h,n):
       baseConf["times"] = [0.14,1.14,2.50,3.1 ]
       baseConf["fadeIn"] =[0.25,0.25,0.25,0.25] 
       baseConf["minLoopTime"] = 4
+
+  elif h=="zik":
+    fns = ["zik1","Coq","Crapaud"]
+    baseConf = {
+    "file":baseMediaPath+"%s.wav"%fns[(n-1)%len(fns)]
+    }
 
   return baseConf
 
