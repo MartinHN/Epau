@@ -1,0 +1,8 @@
+Anamorphose
+
+capteur openpir : 
+mode single
+
+rouge : vcc -> 3,3v rpi
+marron : gnd -> gnd rpi
+orange : out -> GPIO 4 rpi

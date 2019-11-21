@@ -1,0 +1,17 @@
+#clone from pi
+rpi-clone /diskName -s hostname
+
+#create short version
+
+#on ubuntu
+sudo dd if=/// of=/raspImg.img status=progress
+sudo pishrink.sh -sz /raspImg.img
+
+
+#TODO hostname change on boot
+#githubUpdate?
+
+
+#media sync
+
+rsync -a --delete /Users/Tintamar/Google_Drive/00_spectacles/MOMOEpau/media/ pi@ll.local:~/media
