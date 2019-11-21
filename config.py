@@ -56,8 +56,8 @@ def getConfigForParsedHn(h,n):
       baseConf["fadeIn"] =[0   ,  0, 0, 1] 
       baseConf["minLoopTime"] = 1
     elif n==3:#crapaud
-      baseConf["times"] = [0.14,1.14,2.50,3.1 ]
-      baseConf["fadeIn"] =[0.25,0.25,0.25,0.25] 
+      baseConf["times"] = [0.06,1.,2.45,3. ]
+      baseConf["fadeIn"] =[0.33,0.27,0.24,0.28] 
       baseConf["minLoopTime"] = 4
 
   elif h=="zik":
