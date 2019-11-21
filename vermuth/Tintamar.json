@@ -1,0 +1,421 @@
+{
+  "universe": {
+    "testedChannel": {
+      "name": "tested",
+      "circ": -1,
+      "_enabled": false,
+      "ctype": "base",
+      "hasDuplicatedCirc": false,
+      "roleType": "other",
+      "roleFam": "other"
+    },
+    "driverName": "none",
+    "fixtures": {
+      "A1": {
+        "name": "A1",
+        "enabled": true,
+        "globalValue": 0,
+        "channels": [
+          {
+            "name": "channel",
+            "circ": 0,
+            "_enabled": true,
+            "ctype": "base",
+            "hasDuplicatedCirc": false,
+            "roleType": "dimmer",
+            "roleFam": "dim"
+          }
+        ],
+        "ftype": "direct",
+        "_baseCirc": 1
+      },
+      "A2": {
+        "name": "A2",
+        "enabled": true,
+        "globalValue": 0,
+        "channels": [
+          {
+            "name": "channel",
+            "circ": 0,
+            "_enabled": true,
+            "ctype": "base",
+            "hasDuplicatedCirc": false,
+            "roleType": "dimmer",
+            "roleFam": "dim"
+          }
+        ],
+        "ftype": "direct",
+        "_baseCirc": 2
+      },
+      "A3": {
+        "name": "A3",
+        "enabled": true,
+        "globalValue": 0,
+        "channels": [
+          {
+            "name": "channel",
+            "circ": 0,
+            "_enabled": true,
+            "ctype": "base",
+            "hasDuplicatedCirc": false,
+            "roleType": "dimmer",
+            "roleFam": "dim"
+          }
+        ],
+        "ftype": "direct",
+        "_baseCirc": 3
+      },
+      "A4": {
+        "name": "A4",
+        "enabled": true,
+        "globalValue": 0,
+        "channels": [
+          {
+            "name": "channel",
+            "circ": 0,
+            "_enabled": true,
+            "ctype": "base",
+            "hasDuplicatedCirc": false,
+            "roleType": "dimmer",
+            "roleFam": "dim"
+          }
+        ],
+        "ftype": "direct",
+        "_baseCirc": 4
+      },
+      "A5": {
+        "name": "A5",
+        "enabled": true,
+        "globalValue": 0,
+        "channels": [
+          {
+            "name": "channel",
+            "circ": 0,
+            "_enabled": true,
+            "ctype": "base",
+            "hasDuplicatedCirc": false,
+            "roleType": "dimmer",
+            "roleFam": "dim"
+          }
+        ],
+        "ftype": "direct",
+        "_baseCirc": 5
+      }
+    },
+    "groups": {},
+    "_master": 1
+  },
+  "sequenceList": [
+    {
+      "name": "no name",
+      "timeIn": 3,
+      "hold": 0,
+      "timeOut": 0,
+      "stateName": "1"
+    },
+    {
+      "name": "undefined.",
+      "timeIn": 3,
+      "hold": 0,
+      "timeOut": 0,
+      "stateName": "2"
+    }
+  ],
+  "sequencePlayer": {
+    "curSeq": {
+      "name": "black",
+      "timeIn": 0,
+      "hold": 0,
+      "timeOut": 0,
+      "stateName": "__black"
+    },
+    "nextSeq": {
+      "name": "black",
+      "timeIn": 0,
+      "hold": 0,
+      "timeOut": 0,
+      "stateName": "__black"
+    },
+    "playState": "stopped"
+  },
+  "stateList": {
+    "states": {
+      "1": {
+        "name": "1",
+        "full": false,
+        "fixtureStates": [
+          {
+            "name": "A1",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A2",
+            "pChannelValues": {}
+          },
+          {
+            "name": "A3",
+            "pChannelValues": {}
+          },
+          {
+            "name": "A4",
+            "pChannelValues": {}
+          },
+          {
+            "name": "A5",
+            "pChannelValues": {}
+          }
+        ]
+      },
+      "2": {
+        "name": "2",
+        "full": false,
+        "fixtureStates": [
+          {
+            "name": "A1",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A2",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A3",
+            "pChannelValues": {}
+          },
+          {
+            "name": "A4",
+            "pChannelValues": {}
+          },
+          {
+            "name": "A5",
+            "pChannelValues": {}
+          }
+        ]
+      },
+      "3": {
+        "name": "3",
+        "full": false,
+        "fixtureStates": [
+          {
+            "name": "A1",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A2",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A3",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A4",
+            "pChannelValues": {}
+          },
+          {
+            "name": "A5",
+            "pChannelValues": {}
+          }
+        ]
+      },
+      "4": {
+        "name": "4",
+        "full": false,
+        "fixtureStates": [
+          {
+            "name": "A1",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A2",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A3",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A4",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A5",
+            "pChannelValues": {}
+          }
+        ]
+      },
+      "5": {
+        "name": "5",
+        "full": false,
+        "fixtureStates": [
+          {
+            "name": "A1",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A2",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A3",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A4",
+            "pChannelValues": {
+              "channel": 1
+            }
+          },
+          {
+            "name": "A5",
+            "pChannelValues": {
+              "channel": 1
+            }
+          }
+        ]
+      },
+      "6": {
+        "name": "6",
+        "full": false,
+        "fixtureStates": [
+          {
+            "name": "A1",
+            "pChannelValues": {
+              "channel": 0
+            }
+          },
+          {
+            "name": "A2",
+            "pChannelValues": {
+              "channel": 0
+            }
+          },
+          {
+            "name": "A3",
+            "pChannelValues": {
+              "channel": 0
+            }
+          },
+          {
+            "name": "A4",
+            "pChannelValues": {
+              "channel": 0
+            }
+          },
+          {
+            "name": "A5",
+            "pChannelValues": {
+              "channel": 0
+            }
+          }
+        ]
+      },
+      "base": {
+        "name": "base",
+        "full": false,
+        "fixtureStates": [
+          {
+            "name": "A1",
+            "pChannelValues": {
+              "channel": 0.149
+            }
+          },
+          {
+            "name": "A2",
+            "pChannelValues": {
+              "channel": 0.149
+            }
+          },
+          {
+            "name": "A3",
+            "pChannelValues": {
+              "channel": 0.149
+            }
+          },
+          {
+            "name": "A4",
+            "pChannelValues": {
+              "channel": 0.149
+            }
+          },
+          {
+            "name": "A5",
+            "pChannelValues": {
+              "channel": 0.149
+            }
+          }
+        ]
+      }
+    },
+    "currentState": {
+      "name": "current",
+      "full": true,
+      "fixtureStates": [
+        {
+          "name": "A1",
+          "pChannelValues": {
+            "channel": 0
+          }
+        },
+        {
+          "name": "A2",
+          "pChannelValues": {
+            "channel": 0
+          }
+        },
+        {
+          "name": "A3",
+          "pChannelValues": {
+            "channel": 0
+          }
+        },
+        {
+          "name": "A4",
+          "pChannelValues": {
+            "channel": 0
+          }
+        },
+        {
+          "name": "A5",
+          "pChannelValues": {
+            "channel": 0
+          }
+        }
+      ]
+    },
+    "loadedStateName": "current"
+  },
+  "testValue": 1,
+  "dmxController": {
+    "selectedPortName": "/dev/ttyUSB0",
+    "selectedDriverName": "enttec-usb-dmx-pro",
+    "universeName": "main",
+    "toSet": {}
+  }
+}
