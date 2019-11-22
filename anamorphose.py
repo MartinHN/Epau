@@ -84,7 +84,7 @@ def doMainLoop():
     sleep(0.2) 
       
 if __name__=="__main__":
-  doMainLoop()
+  startLoop()
     
 
   
