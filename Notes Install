@@ -1,4 +1,5 @@
 Anamorphose
+////////////////////////////////
 
 capteur openpir : 
 mode single
@@ -6,3 +7,34 @@ mode single
 rouge : vcc -> 3,3v rpi
 marron : gnd -> gnd rpi
 orange : out -> GPIO 4 rpi
+
+
+Noms 
+anamorphoseA
+anamorphoseB
+anamorphoseC
+zikCloitre
+
+
+
+Allee
+/////////////////
+
+Noms
+zikLointain
+zikTuning
+zikEntree
+
+
+
+Animo
+//////////////////////
+Noms 
+animoCoq
+animoChouette
+animoCrapaud
+animoGrenouille
+animoPetitOiseau
+
+
+

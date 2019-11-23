@@ -1,4 +1,5 @@
 import pygame
+from time import sleep
 pygame.mixer.pre_init(44100, -16, 1, 512)
 pygame.mixer.init()
 
@@ -14,9 +15,9 @@ class PyGamePlayer(object):
   def play(self):
     pygame.mixer.music.play()
 
-  def wait(self):
+  def wait(self,grain=.5):
     while pygame.mixer.music.get_busy() == True:
-      continue
+      sleep(grain)
 
   def stop(self):
     self.sound.stop()
