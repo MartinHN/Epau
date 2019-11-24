@@ -5,7 +5,10 @@
  [Service]
  Type=idle
  User=pi
- ExecStart=/bin/bash /home/pi/Epau/autostartPython.sh
+ WorkingDirectory=/home/pi/Epau/
+ ExecStart=python3 main.py
+ StandardOutput=journal
+ StandardError=inherit
 
  [Install]
  WantedBy=multi-user.target
