@@ -11,8 +11,8 @@ orange : out -> GPIO 4 rpi
 
 Noms 
 anamorphoseA
-anamorphoseB
 anamorphoseC
+anamorphoseB
 zikCloitre
 
 
@@ -30,8 +30,8 @@ zikEntree
 Animo
 //////////////////////
 Noms 
-animoCoq
 animoChouette
+animoCoq
 animoCrapaud
 animoGrenouille
 animoPetitOiseau

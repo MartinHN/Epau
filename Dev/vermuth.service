@@ -4,7 +4,7 @@
 
  [Service]
  Type=idle
- ExecStart=/bin/sh /home/pi/Epau/autostartVermuth.sh
+ ExecStart=/bin/bash /home/pi/Epau/autostartVermuth.sh
 
  [Install]
  WantedBy=multi-user.target
