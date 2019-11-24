@@ -12,6 +12,9 @@ if __name__=="__main__":
   elif hn.startswith("animo") or hn=="tintamar":
     from animo import doMainLoop
     doMainLoop()
+  elif hn.startswith("zik"):
+    from zik import doMainLoop
+    doMainLoop()
   else:
     print("not found hostname")
     exit(1)
