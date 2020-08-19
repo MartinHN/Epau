@@ -5,4 +5,5 @@ HOMEDIR=/home/pi
 BASEDIR=$HOMEDIR
 
 cd $BASEDIR/vermuth/server
-NODE_ENV=production node dist/server/src/server.js --path="${BASEDIR}/Epau/vermuth/" --session=$HOSTNAME --public="${BASEDIR}/vermuth/server/dist/server/public" 
+#NODE_ENV=production node dist/server/src/server.js --path="${BASEDIR}/Epau/vermuth/" --session=$HOSTNAME --public="${BASEDIR}/vermuth/server/dist/server/public" 
+npm run run
